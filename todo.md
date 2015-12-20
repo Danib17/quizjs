@@ -4,3 +4,4 @@
 * difficulty
 * randomize math operations
 * ability to choose which math operations to randomize
+* check results of each individual problem
