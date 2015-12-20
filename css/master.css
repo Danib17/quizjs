@@ -105,13 +105,3 @@ p {
   -moz-box-shadow: 0 2px 0 0 #2c6085;
   box-shadow: 0 2px 0 0 #2c6085;
 }
-
-.mybutton {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 100px;
-  text-align: center;
-  top: 130px;
-}
