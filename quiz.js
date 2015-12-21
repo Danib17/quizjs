@@ -1,8 +1,7 @@
-var numberCorrect = 0 ;//Determines how many problems the user got correct
-var numberWrong = 0; //Determines how many the user got wrong
+var numberCorrect = 0 ; //Collects correct answers
+var numberWrong = 0; //Collects incorrect answers
 var numOfProblems = 0; //Collects how many problems the user is going to solve in the quiz
 var Operations = []; //Creates an array that holds the operations the user wants to use
-var OperationsArraySize; //Holds the size of the Operations array to randomize math operations in the quiz
 var divisionArray = []; //Holds all the numbers divisable
 
 getNumOfProblems();
@@ -62,8 +61,6 @@ function getOperations() {
       default:
         alert('Please give a valid operation');
     }
-    OperationsArraySize = Operations.length;
-
     //Fail safe, resets operationsInput if user doesnt enter a value
     if (Operations.length < 1) {
       operationsInput = '';
@@ -73,8 +70,8 @@ function getOperations() {
 
 //Randomizes math operations during quiz
 function getRandomOperation() {
-  return getRandomInt(0, OperationsArraySize - 1);
-  console.log('random operator ' + randomOperator); //DEBUG
+  var getRandomOperationVar = getRandomInt(1, Operations.length);
+  return getRandomOperationVar - 1;
 }
 
 //Randomizer for math problems
